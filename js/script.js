@@ -17,11 +17,9 @@ if (playerInput == '1') {
 } else if (playerInput == '2') {
     playerMove = 'nożyce';
     printMessage('Twój ruch: ' + playerMove);
+} else if (playerInput == '3') {
+    playerMove = 'papier';
+    printMessage('Twój ruch: ' + playerMove);
 } else {
-    if (playerInput == '3') {
-        playerMove = 'papier';
-        printMessage('Twój ruch: ' + playerMove);
-    } else {
-        printMessage('nieznany ruch');
-    }
+    printMessage('nieznany ruch');
 }
