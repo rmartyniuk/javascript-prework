@@ -1,27 +1,26 @@
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 /**
  * Nasłuchiwanie kliknięcia
  */
-let buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function () {
     buttonClicked('kamień');
 });
-let buttonPaper = document.getElementById('button-paper');
+const buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function () {
     buttonClicked('papier');
 });
-let buttonScissors = document.getElementById('button-scissors');
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function () {
     buttonClicked('nożyce');
 });
 
-/**/
+/*Czyszczenie poprzednich komunikatów, losowanie liczby, */
 
 function buttonClicked(playerMove) {
     console.log(playerMove + ' został kliknięty');
     clearMessages();
-    randomNumber = Math.floor(Math.random() * 3 + 1)
-    computerMove = getMoveName(randomNumber);
+    let randomNumber = Math.floor(Math.random() * 3 + 1)
+    let = computerMove = getMoveName(randomNumber);
     displayResult(playerMove, computerMove);
 }
 
